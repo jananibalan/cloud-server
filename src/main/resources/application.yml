@@ -1,0 +1,16 @@
+server:
+  port: 9297
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jananibalan/config-server-
+          clone-on-start: true
+
+
